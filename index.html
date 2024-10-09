@@ -15,8 +15,10 @@
             align-items: center;
             flex-direction: column;
             min-height: 100vh;
-            background-color: #ffffff; /* White background */
-            color: #000000; /* Black text */
+            background-color: #ffffff;
+            /* White background */
+            color: #000000;
+            /* Black text */
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-size: 1.5rem;
             text-align: center;
@@ -52,7 +54,8 @@
         }
 
         a {
-            color: #1DA1F2; /* Blue link color */
+            color: #1DA1F2;
+            /* Blue link color */
             text-decoration: none;
         }
 
@@ -64,6 +67,47 @@
             width: 100%;
             display: block;
             margin-top: 2rem;
+        }
+
+        /* Footer Styles */
+        .site-footer {
+            background-color: #000000;
+            /* Black background */
+            color: #ffffff;
+            /* White text */
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+            width: 100vw;
+            /* Full viewport width */
+            position: relative;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-top: 1px solid #444;
+            /* Dark gray border */
+            font-size: 1rem;
+        }
+
+        .site-footer p {
+            margin: 0;
+        }
+
+        .footer-secondary-links {
+            font-size: 0.85rem;
+            color: #dddddd;
+            /* Light gray for secondary text */
+            margin-top: 10px;
+        }
+
+        .footer-link {
+            color: #f25d1d;
+            /* Blue link color */
+            text-decoration: none;
+        }
+
+        .footer-link:hover {
+            text-decoration: underline;
         }
     </style>
     <!-- Stripe script should be loaded here or at the end of body -->
@@ -108,15 +152,18 @@
     <!-- Stripe Pricing Table Section -->
     <div class="pricing-container">
         <stripe-pricing-table pricing-table-id="prctbl_1Q7aGfRrKVf6n1SAXjjE6p0a"
-        publishable-key="pk_test_51Q5RHGRrKVf6n1SAY01Cujh3d4oek72nfRstQ6d8DQZJfo6QaoccK6gUOcwSOYfaXqqCoqGndbAuSiF9ASES5XFi00KozEpYRn">
+            publishable-key="pk_test_51Q5RHGRrKVf6n1SAY01Cujh3d4oek72nfRstQ6d8DQZJfo6QaoccK6gUOcwSOYfaXqqCoqGndbAuSiF9ASES5XFi00KozEpYRn">
         </stripe-pricing-table>
     </div>
 
-    <div>
-        <footer>
-            <p>&copy; <a href="https://interition.ai/" class="text-white">INTERITION</a> &reg;, 2024 -.</p>
-        </footer>
-    </div>
+    <footer class="site-footer">
+        <p>&copy; 2024 <a href="https://interition.ai/" class="footer-link">INTERITION</a> &reg;. All rights reserved.</p>
+        <p class="footer-secondary-links">
+            <a href="/privacy-policy" class="footer-link">Privacy Policy</a> | 
+            <a href="/terms" class="footer-link">Terms of Service</a>
+        </p>
+    </footer>
+
 
 </body>
 
