@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Own Property Podcast</title>
+    <style>
+        /* Updated Splash Screen Style with white background and black text */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #ffffff; /* White background */
+            color: #000000; /* Black text */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-weight: 700;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-weight: 700;
+            font-size: 2rem;
+            margin-bottom: 0.8rem;
+        }
+
+        h3 {
+            font-weight: 700;
+            font-size: 1.75rem;
+            margin-bottom: 0.7rem;
+        }
+
+        h4 {
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-bottom: 0.6rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+
+        a {
+            color: #1DA1F2; /* Blue link color */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .pricing-container {
+            width: 100%;
+            display: block;
+            margin-top: 2rem;
+        }
+    </style>
+    <!-- Stripe script should be loaded here or at the end of body -->
+    <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+</head>
+
+<body>
+    <div>
+        <h1>Your Own Property Podcast</h1>
+        <p>A podcast tailored to your Postcode about the events impacting your home</p>
+    </div>
+
+    <!-- Example Audio-->
+    <div>
+        <h3>Example Podcasts</h3>
+
+        <!-- First Audio Item -->
+        <div>
+            <audio id="audio1" src="audio/NE716JN.mp3" controls></audio>
+            <div>
+                <h4>NE71 6JN</h4>
+            </div>
+        </div>
+
+        <!-- Second Audio Item -->
+        <div>
+            <audio id="audio2" src="audio/CR04TD.mp3" controls></audio>
+            <div>
+                <h4>CR0 4TD</h4>
+            </div>
+        </div>
+
+        <!-- Third Audio Item -->
+        <div>
+            <audio id="audio3" src="audio/NG53EH.mp3" controls></audio>
+            <div>
+                <h4>NG5 3EH</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stripe Pricing Table Section -->
+    <div class="pricing-container">
+        <stripe-pricing-table pricing-table-id="prctbl_1Q7aGfRrKVf6n1SAXjjE6p0a"
+        publishable-key="pk_test_51Q5RHGRrKVf6n1SAY01Cujh3d4oek72nfRstQ6d8DQZJfo6QaoccK6gUOcwSOYfaXqqCoqGndbAuSiF9ASES5XFi00KozEpYRn">
+        </stripe-pricing-table>
+    </div>
+
+    <div>
+        <footer>
+            <p>&copy; <a href="https://interition.ai/" class="text-white">INTERITION</a> &reg;, 2024 -.</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
