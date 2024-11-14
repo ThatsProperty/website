@@ -101,3 +101,7 @@ a:hover {
 .footer-link:hover {
     text-decoration: underline;
 }
+.release-notes-paragraph {
+    font-size: 0.85rem;
+    text-align: left;
+    }
