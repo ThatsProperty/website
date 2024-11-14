@@ -6,7 +6,7 @@ fetch('release_notes.txt')
     // Create a table element
     const table = document.createElement('table');
 
-    // Add thin border to table
+    // Use border-collapse to remove grid lines
     table.style.borderCollapse = 'collapse';
     table.style.width = '100%';
 
@@ -20,7 +20,8 @@ fetch('release_notes.txt')
     headers.forEach(header => {
       const th = document.createElement('th');
       th.textContent = header;
-      th.style.border = '1px solid black'; // Thin border for header cells
+      // Add padding for header cells
+      th.style.padding = '0px 10px'; // Adjust pixel value for desired padding
       headerRow.appendChild(th);
     });
     thead.appendChild(headerRow);
@@ -34,7 +35,8 @@ fetch('release_notes.txt')
       cells.forEach(cell => {
         const td = document.createElement('td');
         td.textContent = cell;
-        td.style.border = '1px solid black'; // Thin border for data cells
+        // Add padding for data cells
+        td.style.padding = '0px 10px'; // Adjust pixel value for desired padding
         row.appendChild(td);
       });
       tbody.appendChild(row);
