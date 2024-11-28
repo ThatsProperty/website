@@ -1,7 +1,7 @@
-fetch('release_notes.txt')
+fetch('upcoming_features.csv')
   .then(response => response.text())
   .then(data => {
-    const releaseNotesDiv = document.getElementById('release-notes');
+    const upcomingfeaturesDiv = document.getElementById('upcoming-features');
 
     // Create a table element
     const table = document.createElement('table');
@@ -44,9 +44,9 @@ fetch('release_notes.txt')
     table.appendChild(tbody);
 
     // Append the table to the HTML element
-    releaseNotesDiv.appendChild(table);
+    upcomingfeaturesDiv.appendChild(table);
   })
   .catch(error => {
     console.error('Error fetching release notes:', error);
-    releaseNotesDiv.textContent = "Error fetching release notes.";
+    upcomingfeaturesDiv.textContent = "Error fetching release notes.";
   });
