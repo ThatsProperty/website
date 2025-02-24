@@ -1,3 +1,11 @@
 Customer Feedback,Description of Fix,Release
-How to provide feedback not clear, Provided a sentence and link to the user forum underneath the “Start Trial” button.,1
-Proposed linking to Stripe terms and privacy policy when we referred to them in our., Placed appropriate links in privacy policy.,1
+How to provide feedback not clear,Provided a sentence and link to the user forum underneath the “Start Trial” button.,1
+Proposed linking to Stripe terms and privacy policy when we referred to them in our.,Placed appropriate links in privacy policy.,1
+It might help people feel they are getting good value if you say when they can request their 2nd podcast,The “What you get for your subscription” explains that support for multiple post codes is coming in future releases.,2
+I’d like to see some quotes from people saying how what they learned or how they used the info they received from the service.,Provided example feedback from customers on web page.,2
+It is clear I will get my podcast within 48 hours it is not clear why I would want to continue with a subscription?? ,Clarified on the web page that early adopters are  users happy to experience new features as and when they become available while they are subscribed. The user quotes also show use cases that make it clearer why a subscription is of value.,2
+There are some typo’s and unclear phrasing in the terms and conditions.,Addressed the issues in the terms and conditions.,2
+After subscribing - there is no link to go anywhere else (maybe as its MVP) back to home screen close the window etc.  (Just privacy I think it was),Redirected users to a web page on our website that provides closure to the user and informs them about what happens next and how they can manage their subscription.,2
+American spelling of Unauthorised :-),Replaced the “z” with “s” :-),2
+There is no email confirmation after you have subscribed.,Introduced a Welcome email that is sent shortly after subscribing on Stripe.,2
+How do I cancel my subscription?,Information on how to cancel a subscription is now given after the checkout process on Stripe in the welcome email and in the terms and conditions.,2
