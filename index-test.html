@@ -11,6 +11,26 @@
 </head>
 
 <body>
+    <div id="notice-container"></div>
+
+    <script>
+    fetch('notice.html')
+        .then(response => {
+        if (response.ok) {
+            return response.text();
+        } else {
+            return null; // Silently skip if file not found
+        }
+        })
+        .then(html => {
+        if (html) {
+            document.getElementById('notice-container').innerHTML = html;
+        }
+        })
+        .catch(() => {
+        // Suppress all errors silently
+        });
+    </script>
     <div>
         <h1>ThatsProperty.ai</h1>
         <h2>Your Own Property Podcast</h2>
