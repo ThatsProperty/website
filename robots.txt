@@ -1,4 +1,6 @@
 User-agent: *
-Allow: /
+Disallow: /index-live.html
+Disallow: /index.test.html
+Disallow: /README.md
 
 Sitemap: https://thatsproperty.ai/sitemap.xml
